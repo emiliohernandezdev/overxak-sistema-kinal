@@ -1,0 +1,13 @@
+<form class="form-group">
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="sear" class="sr-only">Password</label>
+    <input type="text" class="form-control" id="searc" placeholder="Búsqueda">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+</form>
+
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let person of personas" (click)="setPerson(person)">{{person.primer_nombre}}</li>
+</ul>
+
